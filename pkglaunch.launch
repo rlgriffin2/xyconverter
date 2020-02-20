@@ -1,0 +1,5 @@
+<launch>
+  <node name="keyboard_node" pkg="xyconverter" type="parser_node" />
+  <node name="parser_node" pkg="xyconverter" type="converter_node" />
+  <node name="converter_node" pkg="xyconverter" type="keyboard_node" />
+</launch>
